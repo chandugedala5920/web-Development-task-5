@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroShop</title>
+  <link rel="stylesheet" href="Task5.css">
+  <style>
+    .hero {
+      background: #0b69cd;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ElectroShop</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Smart Gadgets Delivered Fast</h1>
+    <p>Shop the latest electronics at unbeatable prices</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li onclick="showProducts('tv')">Smart TVs</li>
+        <li onclick="showProducts('ac')">Air Conditioners</li>
+        <li onclick="showProducts('kitchen')">Kitchen Appliances</li>
+        <li onclick="showProducts('mobile')">Mobiles</li>
+      </ul>
+    </aside>
+
+    <section class="product-area" id="products">
+      <h2>Featured Products</h2>
+      <div id="productContainer" class="product-grid">
+        <!-- Products will be loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer id="contact">
+    <p>&copy; 2025 ElectroShop | Built by Sadhwika</p>
+  </footer>
+
+  <script src="Task5.js"></script>
+</body>
+</html>
